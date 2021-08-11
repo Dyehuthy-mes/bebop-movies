@@ -6,6 +6,9 @@ function Home() {
     return (
         <div>
             <Page>
+                <div className="home">
+                    <h1>HOME</h1>
+                </div>
             </Page>
         </div>
     )

@@ -6,11 +6,13 @@ import Footer from '../Footer/Footer'
 
 function Page({children}) {
     return (
-        <div>
-            <Header/>
+        <div className="page">
             <NavBar/>
-            {children}
-            <div className="footerStyle">
+            <Header/>
+            <div className="page__content">
+                {children}
+            </div>
+            <div className="page__footer">
                 <Footer/>
             </div>
 

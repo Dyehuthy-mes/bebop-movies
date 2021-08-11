@@ -1,8 +1,22 @@
-.footerStyle{
-    position: absolute;
+*{
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+.page{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page__content{
+    flex-grow: 1;
+}
+
+.page__footer{
+    position: relative;
     border: black solid 1px;
     right:0;
     left:0;
     bottom: 0;
-    padding:auto;
 }
