@@ -1,5 +1,23 @@
 .navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
     height: 50px;
     border: 0.5px solid black;
+}
+
+.navbar__logo{
+    height: 100%;
+}
+
+.navbar__buttons{
+    text-transform: uppercase;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar__buttons__link{
+    text-decoration: none;
+    color:red;
 }

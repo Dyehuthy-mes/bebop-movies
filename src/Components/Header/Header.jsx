@@ -4,7 +4,9 @@ import "./Header.css"
 function Header() {
     return (
         <div className="header">
-            <div className="titleStyle"><h1>BeBoop-Movies</h1></div>
+            <div className="titleStyle">
+                <h1>Welcome...</h1>
+            </div>
         </div>
     )
 }
