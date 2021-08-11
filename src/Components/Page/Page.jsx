@@ -4,12 +4,12 @@ import Header from '../Header/Header'
 import NavBar from '../NavBar/NavBar'
 import Footer from '../Footer/Footer'
 
-function Page() {
+function Page({children}) {
     return (
         <div>
-            
             <Header/>
             <NavBar/>
+            {children}
             <div className="footerStyle">
                 <Footer/>
             </div>
