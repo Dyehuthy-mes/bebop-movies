@@ -3,7 +3,7 @@ import MovieDetails from './Components/MovieDetails/MovieDetails';
 
 function App() {
   return (
-    <div className="App">
+    <div className="principal">
       <MovieDetails id="321"/>
     </div>
   );

@@ -19,11 +19,13 @@ function MovieDetails({id}) {
     }, [])
     
     return (
-        <div>
-            <h1>{title}</h1>
-            <p>{description}</p>
-            <img src={image} alt="reactsionista"></img>
-        </div>
+            <div className="movieDetails">
+                <h1 className="titleMD">{title}</h1>
+                <p className="descriptionMD">{description}</p>
+                <div className="movieDetailsIMGS">
+                    <img className="imgMD" src={image} alt="practicas"></img>
+                </div>
+            </div>
     )
 }
 
