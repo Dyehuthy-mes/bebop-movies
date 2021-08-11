@@ -1,9 +1,4 @@
 .principal{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
     height: auto;
-    width: auto;
-    background: #ffec74;
-  }
+    background: #9fadb1;
+}
