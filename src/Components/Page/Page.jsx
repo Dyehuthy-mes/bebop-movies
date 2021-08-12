@@ -7,8 +7,8 @@ import Footer from '../Footer/Footer'
 function Page({children}) {
     return (
         <div className="page">
-            <NavBar/>
             <Header/>
+            <NavBar/>
             <div className="page__content">
                 {children}
             </div>

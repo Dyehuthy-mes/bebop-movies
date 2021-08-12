@@ -2,6 +2,9 @@ import React from "react";
 import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
 import './App.css';
 import Home from './Pages/Home/Home';
+import Destacadas from "./Pages/Destacadas/Destacadas";
+import Generos from "./Pages/Generos/Generos";
+import Peliculas from "./Pages/Peliculas/Peliculas";
 
 function App() {
   return (
@@ -14,7 +17,13 @@ function App() {
           <Home/>
         </Route>
         <Route path="/destacadas">
-          <h1>Destacadas</h1>
+          <Destacadas/>
+        </Route>
+        <Route path="/generos">
+          <Generos/>
+        </Route>
+        <Route path="/peliculas">
+          <Peliculas/>
         </Route>
       </Switch>
     </Router>
