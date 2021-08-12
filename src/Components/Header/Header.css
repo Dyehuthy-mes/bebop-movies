@@ -12,7 +12,6 @@
     font-size: 20px;
     margin-left: 10px;
     cursor:default;
-    height: 100%;
     margin-top: auto;
 }
 
@@ -20,4 +19,5 @@
     margin: auto;
     position: absolute;
     left: 28rem;
+    top:2.2rem;
 }
