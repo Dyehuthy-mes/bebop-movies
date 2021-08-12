@@ -1,0 +1,29 @@
+.border{
+    display: flex;
+    justify-content: center;
+    width:190px;
+
+    background: linear-gradient(to top, rgba(255, 187, 187, 0.6), rgba(216, 87, 216, 0.3));
+    filter: blur(5px);
+    height: 90%;
+
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:150px;
+    border: 1px solid black;
+    background: linear-gradient(to top, rgba(255, 187, 187, 0.6), rgba(216, 87, 216, 0.3));
+    height: 70%;
+
+}
+
+
+/* .card__img{
+    width: 25%;
+    height: 25%;
+    align-items: center;
+}
+ */

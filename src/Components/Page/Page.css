@@ -1,7 +1,3 @@
-*{
-    margin-top: 0;
-    box-sizing: border-box;
-}
 
 .page{
     display:flex;
@@ -11,6 +7,7 @@
 
 .page__content{
     flex-grow: 1;
+    margin-top: 6.6rem;
 }
 
 .page__footer{
