@@ -9,7 +9,7 @@ function Home() {
         <div>
             <Page>
                 <div>
-                    <SliderCard/>
+                    <SliderCard />
                 </div>
             </Page>
         </div>

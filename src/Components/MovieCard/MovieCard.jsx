@@ -1,23 +1,12 @@
-import React,{useEffect,useState} from 'react'
+import React from 'react'
 import "./MovieCard.css"
 
-function MovieCard({id}) {
-/*     const [imageCard, setImageCard] = useState()
+function MovieCard({pictureUrl,movieTitle}) {
 
-    const getImage = async()=>{
-        const fetchData = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=1afdd03a100acbf8ebb28ac1ffdbc4a4`)
-        const data = await fetchData.json()
-        setImageCard(`https://image.tmdb.org/t/p/original${data.poster_path}`)
-    }
-
-    useEffect(() => {
-        getImage()
-     }, [])
-      */
     return (
-        <div className="card">
-            <div className="border"></div>
-            {/* <img className="card__img" src={imageCard} alt="practicas"></img> */}
+        <div className="movieCard">
+            <img src={`https://image.tmdb.org/t/p/original${pictureUrl}`} alt="" />
+            <h3 className="movieCard__title"> {movieTitle} </h3>
         </div>
     )
 }
