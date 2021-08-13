@@ -7,6 +7,8 @@
     align-items: center;
     height: 350px;
     background-color: rgb(230, 243, 255);
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-top:1px solid black;
     border-bottom: 1px solid black;
     gap:1rem;

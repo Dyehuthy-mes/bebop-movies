@@ -1,6 +1,7 @@
 import React,{useEffect,useState} from 'react'
 import "./SliderCard.css"
 import MovieCard from '../MovieCard/MovieCard'
+import Loader from "../Loader/Loader"
 
 function SliderCard() {
 
@@ -22,7 +23,7 @@ function SliderCard() {
     return (
         <div className="slider">
             {
-                proof && (
+                proof ? (
                     movieData.map(e=>{
                         return (
                         <MovieCard 
@@ -32,9 +33,10 @@ function SliderCard() {
                         />
                         )
                     })
-                )
+                ) : <Loader/>
             }
         </div>
+        
     )
 }
 
