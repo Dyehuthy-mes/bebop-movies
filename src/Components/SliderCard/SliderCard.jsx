@@ -4,8 +4,8 @@ import MovieCard from '../MovieCard/MovieCard'
 
 function SliderCard() {
 
-        const [movieData,setMovieData] = useState([])
-        const [proof,setProof] = useState(false)
+    const [movieData,setMovieData] = useState([])
+    const [proof,setProof] = useState(false)
 
     const getData = async()=>{
         const fetchData = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=1afdd03a100acbf8ebb28ac1ffdbc4a4`)
@@ -25,7 +25,11 @@ function SliderCard() {
                 proof && (
                     movieData.map(e=>{
                         return (
-                        <MovieCard movieTitle={e.title} pictureUrl={e.poster_path} />
+                        <MovieCard 
+                        movieTitle={e.title} 
+                        pictureUrl={e.poster_path} 
+                        movieDescription={e.overview}
+                        />
                         )
                     })
                 )
