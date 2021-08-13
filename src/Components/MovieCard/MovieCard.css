@@ -1,11 +1,11 @@
-.border{
+/* .border{
     display: flex;
     justify-content: center;
     width:190px;
     background: linear-gradient(to top, rgba(255, 187, 187, 0.6), rgba(216, 87, 216, 0.3));
     filter: blur(5px);
     height: 90%;
-}
+} */
 
 .movieCard{
     position:relative;
@@ -16,7 +16,7 @@
     border: 1px solid black;
     background: linear-gradient(to top, rgba(255, 187, 187, 0.6), rgba(216, 87, 216, 0.3));
     height: 100%;
-    width:200px;
+    width:260px;
 }
 
 .movieCard img{
@@ -33,6 +33,9 @@
     color:white;
 }
 
+.movieCard__title{
+    font-family: monospace;
+}
 
 /* .card__img{
     width: 25%;
