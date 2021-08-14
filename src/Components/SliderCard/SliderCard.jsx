@@ -30,6 +30,7 @@ function SliderCard() {
                         movieTitle={e.title} 
                         pictureUrl={e.poster_path} 
                         movieDescription={e.overview}
+                        id={e.id}
                         />
                         )
                     })

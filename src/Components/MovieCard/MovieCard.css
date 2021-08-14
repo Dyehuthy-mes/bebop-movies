@@ -52,9 +52,6 @@
     border:solid black 1px;
 }
 
-.movieCard__img:hover ~ .movieCard__modal{
-    opacity: 1;
-}
-.movieCard__title:hover ~ .movieCard__modal{
+.movieCard:hover ~ .movieCard__modal{
     opacity: 1;
 }

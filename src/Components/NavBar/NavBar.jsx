@@ -21,8 +21,8 @@ function NavBar() {
                         navButtons && (
                             navButtons.map(e=>{
                                 return <NavLink className="navbar__buttons__link" to={e}>
-                                        <span>{e}</span>
-                                        </NavLink>
+                                       <span>{e}</span>
+                                       </NavLink>
                             })
                         )
                 }
