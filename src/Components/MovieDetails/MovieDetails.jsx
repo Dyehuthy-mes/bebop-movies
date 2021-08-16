@@ -19,13 +19,15 @@ function MovieDetails({id}) {
     }, [])
     
     return (
+        <div className="moviedetails__container">
             <div className="movieDetails">
-                <h1 className="titleMD">{title}</h1>
-                <p className="descriptionMD">{description}</p>
-                <div className="movieDetailsIMGS">
-                    <img className="imgMD" src={image} alt="practicas"></img>
+                <h1 className="movieDetails__title">{title}</h1>
+                <p className="movieDetails__description">{description}</p>
+                <div className="movieDetails__image">
+                    <img className="movieDetails__image__controller" src={image} alt="moviePoster"></img>
                 </div>
             </div>
+        </div>
     )
 }
 
