@@ -18,3 +18,15 @@
 .slider__button{
     cursor: pointer;
 }
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  color: rgb(255, 255, 255);
+  font-family: swiper-icons;
+  font-size: var(--swiper-navigation-size);
+  text-transform: none !important;
+  letter-spacing: 0;
+  text-transform: none;
+  font-variant: initial;
+  line-height: 1;
+}
