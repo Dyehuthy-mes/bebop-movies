@@ -3,7 +3,7 @@ import "./SliderCard.css"
 import MovieCard from '../MovieCard/MovieCard'
 import Loader from "../Loader/Loader"
 
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y} from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 
@@ -26,10 +26,6 @@ function SliderCard() {
         getData()
      }, [])
      
-     const navigationPrevRef = React.useRef(null)
-     const navigationNextRef = React.useRef(null)
-     
-
     return (
         <div className="slider">
             <Swiper
