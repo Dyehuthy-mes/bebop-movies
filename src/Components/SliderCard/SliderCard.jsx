@@ -9,6 +9,7 @@ import 'swiper/swiper-bundle.css';
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
+
 function SliderCard() {
 
     const [movieData,setMovieData] = useState([])
@@ -25,12 +26,17 @@ function SliderCard() {
         getData()
      }, [])
      
+     const navigationPrevRef = React.useRef(null)
+     const navigationNextRef = React.useRef(null)
+     
 
     return (
         <div className="slider">
             <Swiper
             spaceBetween={0}
             slidesPerView={7}
+            navigation
+            pagination={{ clickable: true }}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
             >
@@ -38,7 +44,7 @@ function SliderCard() {
                 { proof && (
                         movieData.map(e=>{
                             return (
-                            <SwiperSlide>
+                            <SwiperSlide>  
                                 <MovieCard 
                                 movieTitle={e.title} 
                                 pictureUrl={e.poster_path} 
