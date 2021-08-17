@@ -46,10 +46,6 @@
 .movieCard__title__description{
     height: 5rem;
     width:200px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    border:solid black 1px;
 }
 
 .movieCard:hover ~ .movieCard__modal{

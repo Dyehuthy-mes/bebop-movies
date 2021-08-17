@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link,NavLink } from 'react-router-dom'
 import "./NavBar.css"
 import "../SearchBar/SearchBar"
 import SearchBar from '../SearchBar/SearchBar'
@@ -15,7 +15,7 @@ function NavBar() {
 
     return (
         <div className="navbar">
-            <div className="navbar__title"><h1>BEBOP-MOVIES</h1></div>
+            <Link to="/inicio" className="navbar__title"><h1>BEBOP-MOVIES</h1></Link>
             <div className="navbar__buttons">
                 {
                         navButtons && (
