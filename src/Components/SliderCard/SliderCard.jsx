@@ -3,6 +3,12 @@ import "./SliderCard.css"
 import MovieCard from '../MovieCard/MovieCard'
 import Loader from "../Loader/Loader"
 
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.css';
+
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
+
 function SliderCard() {
 
     const [movieData,setMovieData] = useState([])
@@ -22,20 +28,29 @@ function SliderCard() {
 
     return (
         <div className="slider">
-            {
-                proof ? (
-                    movieData.map(e=>{
-                        return (
-                        <MovieCard 
-                        movieTitle={e.title} 
-                        pictureUrl={e.poster_path} 
-                        movieDescription={e.overview}
-                        id={e.id}
-                        />
-                        )
-                    })
-                ) : <Loader/>
-            }
+            <Swiper
+            spaceBetween={0}
+            slidesPerView={7}
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)}
+            >
+                { proof === false && <Loader/>}
+                { proof && (
+                        movieData.map(e=>{
+                            return (
+                            <SwiperSlide>
+                                <MovieCard 
+                                movieTitle={e.title} 
+                                pictureUrl={e.poster_path} 
+                                movieDescription={e.overview}
+                                id={e.id}
+                                />
+                            </SwiperSlide>
+                            )
+                        })
+                    )
+                }
+                </Swiper>
         </div>
         
     )

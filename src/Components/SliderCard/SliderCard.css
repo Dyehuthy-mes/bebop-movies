@@ -1,17 +1,21 @@
-::-webkit-scrollbar{
-    display: none;
-}
-
 .slider{
     display: flex;
     align-items: center;
-    height: 350px;
+    height: 360px;
+    justify-content: space-around;
     background-color: rgb(216, 228, 240);
-    padding-top: 10px;
-    padding-bottom: 10px;
     border-top:1px solid black;
     border-bottom: 1px solid black;
-    gap:1rem;
-    overflow-x: scroll;
+    padding-top: 0.8rem;
+}
+.caroussel{
+    overflow: hidden;
+    display: flex;
+    height: 100%;
+    width: 90%;
+}
+
+.slider__button{
+    cursor: pointer;
 }
 
