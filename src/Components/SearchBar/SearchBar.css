@@ -1,14 +1,18 @@
 .searchBar{
-    border: 1px solid black;
+    border-radius: 20px 20px 20px 20px;
 
 }
 
 .searchBar__submit{
-    border-left: 1px solid black; 
-    border-radius: 0 20px 20px 0;
+    background-color:#a0a0a0;
+    border-radius: 50%;
+    width:35px;
+    height: 30px;
 }
 
 .noAtr{
     outline:none;
     border:none;  
+    border-radius: 20px 20px 20px 20px;
+    
 }

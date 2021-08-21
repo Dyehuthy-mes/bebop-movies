@@ -19,13 +19,11 @@ function MovieCard({id,pictureUrl,movieTitle,movieDescription,movieCast}) {
                 alt="" 
                 />
             </Link>
-            <div className="movieCard__modal">
                 <h3 className="movieCard__title"> {movieTitle} </h3>
                     <div className="movieCard__title__description">
                         {textEllipsis(movieDescription)}
                     </div>
                 {/* <h5> {movieCast} </h5> */}
-            </div>
         </div>
     )
 }

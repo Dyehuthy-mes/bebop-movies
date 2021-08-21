@@ -1,4 +1,10 @@
 *{
     box-sizing: border-box;
 }
-    
+
+
+:root{
+    --text-color: #FFFCEF;
+    --button-color:#878787;
+    --app-body: linear-gradient(0.95turn, #4A4A4A,#000000);
+}

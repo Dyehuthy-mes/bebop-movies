@@ -3,8 +3,8 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 50px;
-    border-bottom: 0.5px solid black;
+    height: 60px;
+    border-bottom: 0.5px solid #FFFCEF;;
 }
 
 .navbar__logo{
@@ -21,7 +21,7 @@
 
 .navbar__buttons__link{
     text-decoration: none;
-    color: #990099;
+    color: #FFFCEF;
     font-weight: bold;
 }
 
@@ -31,5 +31,5 @@
     height:100%;
     cursor: pointer;
     text-decoration: none;
-    color:black;
+    color:#FFFCEF;
 }

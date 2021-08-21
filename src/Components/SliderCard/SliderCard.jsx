@@ -30,7 +30,7 @@ function SliderCard() {
         <div className="slider">
             <Swiper
             spaceBetween={0}
-            slidesPerView={7}
+            slidesPerView={1}
             navigation
             pagination={{ clickable: true }}
             onSlideChange={() => console.log('slide change')}

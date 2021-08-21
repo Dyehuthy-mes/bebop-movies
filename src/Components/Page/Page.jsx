@@ -10,9 +10,9 @@ function Page({children}) {
             <div className="page__content">
                 {children}
             </div>
-            <div className="page__footer">
+           {/*  <div className="page__footer">
                 <Footer/>
-            </div>
+            </div> */}
 
         </div>
     )
