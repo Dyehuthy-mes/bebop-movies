@@ -1,13 +1,32 @@
 .searchBar{
     border-radius: 20px 20px 20px 20px;
+    width: auto;
+    border: 1px solid black;
+    background: white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
 
+.searchBar form{
+    display: flex;
+    align-items: center;
+    padding:0px 0px 0px 20px;
 }
 
 .searchBar__submit{
-    background-color:#a0a0a0;
-    border-radius: 50%;
-    width:35px;
-    height: 30px;
+    background:#FFFCEF;
+    padding: 2px 10px 2px 10px;
+    border:none;
+    transition:0.5s;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.searchBar__submit:hover{
+    background:#ffbf35;
+    cursor: pointer;
 }
 
 .noAtr{

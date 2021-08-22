@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import { useHistory } from 'react-router-dom'
 import "./SearchBar.css"
+import SearchIcon from '@material-ui/icons/Search';
 
 
 function SearchBar({props}) {
@@ -25,10 +26,11 @@ function SearchBar({props}) {
                 type="text" 
                 onChange={(e)=>setPredictive(e.target.value)}
                 />
-                <input 
+                <button 
                 className="searchBar__submit " 
                 type="submit"
-                /> 
+                ><SearchIcon />
+                </button>
            </form>
         </div>
     )
