@@ -18,8 +18,8 @@ function MovieCard({id,pictureUrl,movieTitle,movieDescription,movieCast}) {
                 src={`https://image.tmdb.org/t/p/original${pictureUrl}`} 
                 alt="" 
                 />
+                            <h3 className="movieCard__title"> {movieTitle} </h3>
             </Link>
-                <h3 className="movieCard__title"> {movieTitle} </h3>
                     <div className="movieCard__title__description">
                         {textEllipsis(movieDescription)}
                     </div>
