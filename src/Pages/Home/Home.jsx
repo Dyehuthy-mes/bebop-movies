@@ -1,4 +1,4 @@
-import {React, useContext} from 'react'
+import {React, useContext, useEffect} from 'react'
 import Page from '../../Components/Page/Page'
 import SliderCard from '../../Components/SliderCard/SliderCard'
 import { MovieContext } from '../../Context/MovieContext'
@@ -8,14 +8,14 @@ import "./Home.css"
 
 function Home({pictureUrl}){
     
-    const firstState= useContext(MovieContext) 
+    const {firstState} = useContext(MovieContext)
 
     return (
         <div>
             <Page>
                 <div>
                     <SliderCard />
-                    {firstState}
+                    <h1>{firstState}</h1>
                 </div>
             </Page>
         </div>
