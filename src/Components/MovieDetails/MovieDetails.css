@@ -20,20 +20,29 @@
     display: flex;
     justify-content: center;
     width: auto;
-
+    height: auto;
 }
 
 .movieDetails__image__controller{
-    width: 40%;
-    height: 40%;
+    display: flex;
+    width: 100%;
+    height: 100%;
     align-items: center;
+    opacity: 20%;
+    margin-bottom: -100%;
 }
 
 .movieDetails__title{
+    color:#ffffff;
+    width: auto;
+    font-size: 40px;
     text-align: center;
-    cursor: default;
-    color: #990099;
-    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    word-break:keep-all;
+    white-space:normal;
+    filter: brightness(5);
+    margin-bottom: 10%;
 }
 
 .movieDetails__description{
@@ -41,6 +50,6 @@
     cursor: default;
     font-weight: bolder;
     color: aliceblue;
-    word-break:keep-all;
-    white-space:normal;
+    font-family: 'Poppins', sans-serif;
+    filter: brightness(5);
 }

@@ -17,14 +17,20 @@ function MovieDetails({id}) {
     useEffect(() => {
        getmoviedata()
     }, [])
-    
+
+    const background = {
+        display: "flex",
+        justifyContent: "center",
+        alignContent: "center",
+      };
+
     return (
-        <div className="moviedetails__container">
+        <div style={background}>
+        <div className="movieDetails__image">
             <div className="movieDetails">
+                <img src={image} className="movieDetails__image__controller"/>
                 <h1 className="movieDetails__title">{title}</h1>
                 <p className="movieDetails__description">{description}</p>
-                <div className="movieDetails__image">
-                    <img className="movieDetails__image__controller" src={image} alt="moviePoster"></img>
                 </div>
             </div>
         </div>
